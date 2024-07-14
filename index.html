@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass-Eye</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="favicon.png">
+</head>
+<body>
+<div id="wrapper">
+    <div id="container">
+        <h1 id="heading">Password Generator</h1>
+
+             <!--?PASSWORD BAR SECTION-->
+        <div id="passwordbar">
+            <input type="text" readonly id="pwdgenerated">
+            <div id="buttons">
+            <button id="copybutton">
+                <span id="copybuttonmessage" class="copybuttonmessage">
+                    <img width="30" height="30" src="https://img.icons8.com/quill/50/copy.png" alt="copy"/>
+                </span>
+            </button>
+            </div>
+        </div>
+
+        <div id="section">
+    
+        <!--? SIZE LENGTH SECTION-->
+        <div id="sizelength">
+            <p>Password length</p>
+            <p id="passwordlength">0</p>
+        </div>
+
+        <!--? SLIDER SECTION-->
+        <div id="sliderdiv">
+            <input id="slider" type="range" min="1" max="20">
+        </div>
+
+        <!--? 4TYPE OF INPUT SELECTION CHECKBOX-->
+        <div class="checkbox">
+            <input type="checkbox" id="uppercase" class="check">
+            <label for="uppercase">Include uppercase Letters</label>
+        </div>
+        <div  class="checkbox">
+            <input type="checkbox" id="lowercase" class="check">
+            <label for="lowercase">Include lowercase Letters</label>
+        </div>
+        <div  class="checkbox">
+            <input type="checkbox" id="numbers" class="check">
+            <label for="numbers">Include numbers</label>
+        </div>
+        <div  class="checkbox">
+            <input type="checkbox"  id="symbols" class="check">
+            <label for="symbols">Include symbols</label>
+        </div>
+
+        <!--? PASSWORD STRENGTH SECTION-->
+        <div id="strength">
+            <p>Strength</p>
+            <div id="circle"></div>
+        </div>
+
+        <!--?GENERATE PASSWORD SECTION-->
+        <div id="generatepassword">
+        <button id="passwordbutton">Generate Password</button>
+        </div>
+
+</div>
+    </div>
+    </div>
+
+<script src="index.js"></script>
+</body>
+</html>

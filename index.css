@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    background-image: radial-gradient(circle at top left, #48c6ef, #6f86d6);
+}
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-image: linear-gradient(0deg, rgba(3, 121, 241,0.5) 0%, rgba(3, 121, 241,0.5) 9%,transparent 9%, transparent 16%,rgba(11, 75, 199,0.5) 16%, rgba(11, 75, 199,0.5) 49%,rgba(9, 86, 209,0.5) 49%, rgba(9, 86, 209,0.5) 100%),linear-gradient(135deg, rgb(3, 121, 241) 0%, rgb(3, 121, 241) 31%,rgb(13, 63, 188) 31%, rgb(13, 63, 188) 37%,transparent 37%, transparent 56%,rgb(9, 86, 209) 56%, rgb(9, 86, 209) 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+}
+
+#container {
+    width: 90%;
+    max-width: 600px;
+    background-color: #ffffffd5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 30px;
+    animation: fadeIn 0.5s ease;
+}
+#container h1 {
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+#passwordbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+#heading
+{
+    font-family:monument;
+    font-size: 40px;
+}
+  
+  #pwdgenerated:focus {
+    text-align: center;
+    box-shadow: 5.5px 7px 0 #4b64eee2;
+  }
+  
+#pwdgenerated {
+    font-weight: 900;
+    height:40px;
+    width: 40px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease;
+    flex: 0.9;
+    border: none;
+    font-size: 16px;
+    color: #ff0707;
+}
+
+#passwordbar button {
+    animation: fadeIn 0.5s ease;
+    height:40px;
+    width:50px;
+    background-color: #adbae7;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#passwordbar button:hover {
+    color:rgb(30, 255, 0);
+    background-color: #536DFE;
+}
+
+#section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#sizelength {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#sizelength p {
+    font-family: monument;
+    color: #333333;
+    font-size: 25px;
+}
+
+#slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 4px;
+    border-radius: 5px;
+    background-image: linear-gradient(to right,rgb(123, 117, 206),rgb(27, 27, 220));
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-bottom: 20px;
+  }
+  #slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #000000;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  
+  #slider::-webkit-slider-thumb:hover {
+    box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.16);
+    transition: 0.3s ease-in-out;
+  }
+  
+  #slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #000000;
+    cursor: pointer;
+  }
+  
+#slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color:#e7140d;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.checkbox {
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkbox input[type="checkbox"] {
+    height:16px;
+    width:16px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.checkbox label {
+    font-family: monument;
+    font-size: 18px;
+    color: #333333;
+    cursor: pointer;
+}
+
+#strength {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#strength p {
+    font-weight: 700;
+    font-family: monument;
+    color: #333333;
+    font-size: 20px;
+}
+
+#circle {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    box-shadow: 1px 0px 10px rgba(255, 255, 255, 0.5), 1px 0px 10px #5e17eb;
+}
+
+#generatepassword {
+    margin-top: 20px;
+}
+
+#passwordbutton {
+    align-items: center;
+    appearance: none;
+    background-color: #EEF2FF;
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: #536DFE;
+    box-shadow: rgba(83, 109, 254, 0.2) 0 2px 4px, rgba(83, 109, 254, 0.15) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #536DFE;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 56px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 24px;
+    padding-right: 24px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow 0.15s, transform 0.15s;
+    user-select: none;
+    -webkit-user-select: none;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 20px;
+  }
+  
+  #passwordbutton:focus {
+    outline: none;
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(83, 109, 254, 0.4) 0 2px 4px, rgba(83, 109, 254, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  }
+  
+  #passwordbutton:hover {
+    box-shadow: rgba(83, 109, 254, 0.3) 0 4px 8px, rgba(83, 109, 254, 0.2) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+  #passwordbutton:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+
+.copybuttonmessage {
+    transform: scale(0);
+    transition: transform 0.3s ease;
+}
+
+.active {
+    transform: scale(1);
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
